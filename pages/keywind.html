@@ -1,0 +1,106 @@
+
+  <html>
+    <head>
+  <title>Sign in to Keycloak</title>
+
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+      <link href="./css/style.css" rel="stylesheet" />
+
+      <script defer src="/auth/resources/yltcp/login/keywind/dist/index.js" type="text/javascript"></script>
+    </head>
+    <body>
+<div class="flex flex-col bg-gray-100 min-h-screen justify-center"> 
+    <span class="text-center ml-2 font-bold text-xl text-orange-300">Universitas Udayana</span>
+  
+    <div class=" bg-gray-100 flex flex-row items-center justify-center sm:py-16">
+        <div class="invisible md:visible md:w-4/12 max-h-96">
+                <img src="https://telegra.ph/file/01361361694f5f2be8ddf.png" alt="" srcset="" class="invisible md:visible w-auto"> 
+        </div>
+
+        <div class="max-w-md space-y-6 w-full ">
+  <div class="bg-white p-8 rounded-lg space-y-6">
+  <header class="space-y-4">
+  <div class="font-bold text-center text-2xl">
+    <div class="kc-logo-text"><span>Keycloak</span></div>
+  </div>
+  <h1 class="text-center text-xl">    Sign in to your account
+</h1>
+  </header>
+  <main class="space-y-4">
+      <form
+        action="http://localhost:8080/auth/realms/master/login-actions/authenticate?session_code=-3DR2Un37Iq_sgyRKILx4GkT58DjWW49pjd3TfGYyz4&amp;execution=82a82008-3077-412f-9b66-8e4abe844c0b&amp;client_id=security-admin-console&amp;tab_id=atE7XoXRQRc"
+        class="m-0 space-y-4"
+        method="post"
+        onsubmit="login.disabled = true; return true;"
+      >
+        <input
+          name="credentialId"
+          type="hidden"
+          value=""
+        >
+        <div>
+  <label class="sr-only" for="username">
+Username or email  </label>
+  <input
+    autofocus
+    
+    required
+    aria-invalid="false"
+    class="block border-gray-300 mt-1 rounded-md w-full focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 sm:text-sm"
+    id="username"
+    name="username"
+    placeholder="Username or email"
+      autocomplete="email"
+      type="text"
+      value=""
+  >
+        </div>
+        <div>
+  <label class="sr-only" for="password">
+            Password
+  </label>
+  <input
+    
+    
+    required
+    aria-invalid="false"
+    class="block border-gray-300 mt-1 rounded-md w-full focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 sm:text-sm"
+    id="password"
+    name="password"
+    placeholder="Password"
+      type="password"
+  >
+        </div>
+        <div class="flex items-center justify-between">
+        </div>
+        <div class="pt-4">
+  <button
+    class="bg-primary-600 flex justify-center px-4 py-2 relative rounded-lg text-sm text-white w-full focus:outline-none focus:ring-2 focus:ring-primary-600 focus:ring-offset-2 hover:bg-primary-700"
+      name="login"
+      type="submit"
+  >
+            Sign In
+  </button>
+        </div>
+      </form>
+  </main>
+  </div>
+  <div class="flex justify-around">
+  </div>
+        </div>
+
+        <div class="invisible md:visible md:w-4/12 max-h-96 flex flex-col">
+            
+            <img src="https://telegra.ph/file/029f4586d5b3a13c184b3.png" alt="" srcset="" class="w-auto invisible md:visible"> 
+        </div>
+
+  </div>
+</div>
+
+    </body>
+  </html>
